@@ -180,18 +180,11 @@ if __name__ == "__main__":
         sys.exit(-2)
  
     words_dict = {}
-    # words_dict['Mentor'] = 'Leda'
-    # words_dict['CALIBRE'] = 'LePV'
-    # words_dict['calibRE'] = 'lepvRE'
-    # words_dict['calibre'] = 'lepv'
-    # words_dict['tsmc'] = 'txmc'
-    # words_dict['Tsmc'] = 'txmc'
-    # words_dict['TSMC'] = 'TXMC' 
-    words_dict['symopcmodes_xuv.o'] = 'symopcmodes_euv.o'
-    words_dict['cuda_wrap_xuv_sim.o'] = 'cuda_wrap_euv_sim.o'
+    words_dict['tsmc'] = 'txmc'
+    words_dict['Tsmc'] = 'txmc'
+    words_dict['TSMC'] = 'TXMC' 
     if args.config_file and os.path.isfile(args.config_file):
         words_dict = words_dict = read_config_file(args.config_file)
-
 
     max_workers = 20     # Use 20 worker threads
     buffer_size = 16384  # 16KB buffer size
